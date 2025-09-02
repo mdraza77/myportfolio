@@ -1,0 +1,549 @@
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="skills-title">Technical Skills</h2>
+
+            <div class="skills-container">
+                <div class="development-skills">
+                    <h3 class="skills-subtitle">Development Skills</h3>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Frontend Development</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Backend Development</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">Database Management</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="skill-bar">
+                        <div class="skill-info">
+                            <span class="skill-name">DevOps</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="tech-stack">
+                    <div class="tech-card">
+                        <h4 class="tech-card-title">Frontend</h4>
+                        <ul class="tech-list">
+                            <li class="tech-item">HTML</li>
+                            <li class="tech-item">CSS</li>
+                            <li class="tech-item">JavaScript</li>
+                            <li class="tech-item">Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h4 class="tech-card-title">Backend</h4>
+                        <ul class="tech-list">
+                            <li class="tech-item">PHP</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h4 class="tech-card-title">Database</h4>
+                        <ul class="tech-list">
+                            <li class="tech-item">MySQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="tech-card">
+                        <h4 class="tech-card-title">DevOps</h4>
+                        <ul class="tech-list">
+                            <li class="tech-item">Docker</li>
+                            <li class="tech-item">Git</li>
+                            <li class="tech-item">CI/CD</li>
+                            <li class="tech-item">AWS</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+.skills-section {
+    padding: 4rem 1rem;
+    background-color: #1a1a1a;
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.skills-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #6c63ff, #8f8aff);
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center; */
+}
+
+.development-skills {
+    margin-bottom: 3rem;
+}
+
+.skills-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.skill-bar {
+    margin-bottom: 1.5rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    color: #ffffff;
+}
+
+.skill-percentage {
+    color: #6c63ff;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #6c63ff, #8f8aff);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.2);
+}
+
+.tech-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #6c63ff;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-item {
+    color: #cccccc;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.tech-item:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 3rem 1rem;
+    }
+
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+    .tech-card {
+        width: 163px;
+    }
+
+    /* .skills-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+    } */
+}
+
+
+
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="./my_image/my_image.jpg" alt="Profile" class="about-image">
+                </div>
+                <div class="about-info">
+                    <h3 class="about-subtitle">Web Developer</h3>
+                    <p class="about-text">
+                        My name is Md Raza a BCA student with a strong interest in web development. Currently focused on enhancing his skills in building and designing web applications, Md Raza is actively learning the latest web technologies to gain hands-on experience in the field.
+                    </p>
+                    <!-- <p class="about-text">
+                        Currently pursuing my degree in Software Engineering, I'm constantly exploring new technologies
+                        and working on projects that challenge me to grow both technically and creatively.
+                    </p> -->
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Coding</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <!-- <div class="stat-box">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Hackathons</div>
+                        </div> -->
+                        <div class="stat-box">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="cta-primary">Get in Touch</a>
+                        <a href="https://drive.google.com/file/d/1PePF5TbDxjzZ-pYY_Rd_zTcGD1-Fh8uG/view?usp=sharing"
+                            class="cv-button">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    .about-section {
+    padding: 4rem 1rem;
+    background-color: #1a1a1a;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #6c63ff;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.2);
+    margin-bottom: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #6c63ff;
+}
+
+.stat-label {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.about-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cv-button {
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        padding: 6rem 2rem;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .about-buttons {
+        flex-direction: row;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-subtitle {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+<section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Md Raza</span></h1>
+            <h2 class="hero-subtitle">Web Developer</h2>
+            <p class="hero-text">
+                Passionate about creating innovative solutions through code. Specializing in full-stack development and
+                always eager to learn new technologies.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary">Hire Me</a>
+                <a href="#projects" class="cta-secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+
+    .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #6c63ff;
+}
+
+.hero-subtitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.cta-primary {
+    background-color: #6c63ff;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-primary:hover {
+    background-color: #5650d8;
+    color: white;
+}
+
+.cta-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a
+                            href="https://drive.google.com/file/d/1PePF5TbDxjzZ-pYY_Rd_zTcGD1-Fh8uG/view?usp=sharing"><button
+                                class="resume-btn">Resume</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+.navbar {
+    padding: .5rem 2rem;
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin: 0 0.5rem;
+}
+
+.resume-btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
